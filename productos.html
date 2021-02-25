@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Productos</title>
+
+    <style>
+        body{
+            position:relative;
+        }
+        .sticky-top-2 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 56px;
+            z-index: 1019;
+        }
+    </style>
+    
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+    
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+      
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto ml-auto text-center">
+          <a class="nav-item nav-link" href="index.html">Inicio</a>
+          <a class="nav-item nav-link active" href="productos.html">Productos</a>
+
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="caracteristicas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Características
+            </a>
+            <div class="dropdown-menu shadow-lg p-3 mb-5 bg-white rounded" aria-labelledby="navbarDropdown">
+              <a class="btn btn-outline-danger btn-block" href="primera.html">Primera</a>
+              <a class="btn btn-outline-danger btn-block" href="segunda.html">Segunda</a>
+              <a class="btn btn-outline-danger btn-block" href="tercera.html">Tercera</a>
+              <!--<a class="dropdown-item" href="#">Tercera</a>-->
+            </div>
+          </div>
+
+
+          <a class="nav-item nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Registro
+            </a>
+            <div class="dropdown-menu shadow-lg p-3 mb-5 bg-white rounded">
+              <form class="px-4 py-3">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-outline-danger mt-2">Sign in</button>
+              </form>
+              <a class="dropdown-item text-danger" href="#">New around here? Sign up</a>
+              <a class="dropdown-item text-danger" href="#">Forgot password?</a>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+          <a href="#" class="btn btn-outline-primary mr-2">F</a>
+          <a href="#" class="btn btn-outline-danger">Y</a>
+        </div>
+      </div>
+    </nav>
+    <!--Fin Barra de navegación-->
+
+    <!--Migas de pan-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Productos</li>
+      </ol>
+    </nav>
+    <!--Fin migas de pan-->
+
+    <main>
+
+        <section class="container my-4">
+            <h3 class="text-uppercase text-center mb-4">Productos</h3>
+            <p class="lead text-center mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati eveniet doloremque dolore ratione placeat labore eos sit voluptas? Earum et quos nam libero eligendi nulla dolorem vitae pariatur molestiae?</p>
+        </section>
+
+        <!--Scrollspy-->
+        <nav id="navbar-example" class="navbar navbar-expand-md navbar-light bg-light sticky-top-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills mr-auto ml-auto text-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#seccion-1">Frambuesas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#seccion-2">Frutas del bosque</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#seccion-3">Fresas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-4">Cerezas</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!--Fin del scrollspy-->
+
+        <!--Contenido accesible desde menú scrollspy-->
+        <div class="container">
+            <section id="seccion-1">
+                <h1>Frambuesas</h1>
+                <img src="imagenes/fruta.jpg" alt="Fruta 1" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perferendis assumenda voluptates. Quo eius eos rerum. Velit, accusantium! Est porro eum aut deserunt cum aliquam illo sit doloribus. Nemo quaerat vero beatae repellendus assumenda. Animi nam pariatur nobis quaerat, iste fugiat autem est enim corrupti quod expedita ea voluptatibus facere eum. Ex nesciunt hic inventore sunt qui quas dolorem eos voluptatem expedita culpa, sint laudantium ratione, delectus modi aut. Quidem perspiciatis sunt repellat tempora quo aut? Molestiae molestias autem quasi id mollitia sequi ratione, tempora illo maiores. Eligendi unde minima perferendis aperiam quidem. Sapiente, quo? Porro necessitatibus accusantium autem enim doloremque! Tempora ipsa ducimus esse illo facilis maxime vel harum earum doloremque ad, odit assumenda! Distinctio sit accusamus, exercitationem quae tempore perferendis deleniti recusandae, error facere optio explicabo? Delectus, vero accusamus! Corporis consequatur, perferendis explicabo unde quis voluptates nobis, iusto possimus quaerat laudantium harum aliquid numquam, temporibus voluptatem veniam. Cum, veritatis aspernatur? Molestiae, sint id officia minima veritatis, cum ratione animi, saepe nemo mollitia similique eveniet fuga nostrum qui illo iste rem perferendis dolore deserunt iure. Ea, est at dolore sit iure ex. Ea consequatur, impedit, unde maxime ex non alias voluptatem labore magni consequuntur repudiandae ab, cupiditate neque. Reprehenderit.</p>
+            </section>
+            <section id="seccion-2">
+                <h1>Frutas del bosque</h1>
+                <img src="imagenes/fruta2.jpg" alt="Fruta 2" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quasi, architecto cumque sequi dolor impedit est enim! Aliquid praesentium eius molestias deserunt cum cupiditate quis veritatis earum adipisci harum numquam itaque temporibus incidunt nihil, voluptatem ducimus totam iure quo voluptate soluta recusandae quod inventore dignissimos sed. Quisquam atque vitae dolore recusandae nam voluptatem temporibus at quod, nesciunt earum ea eveniet corporis vel, ipsum dignissimos! Similique vero magni perspiciatis quos nobis pariatur qui voluptas, necessitatibus architecto sed voluptatem repellendus excepturi in, molestias assumenda reprehenderit, amet mollitia accusamus debitis? Quos adipisci deleniti aut? Illum enim cupiditate eos libero, exercitationem molestias ipsum tempore ab dolorem, quis, maiores rem non autem numquam corrupti esse? Placeat illum debitis beatae nesciunt! Laboriosam voluptate voluptates porro libero placeat, est aliquam! Error doloribus ipsum nam mollitia quae? Eligendi quod neque ipsum molestiae pariatur architecto quaerat dolores cum tempora exercitationem officia excepturi sunt facilis, libero repellat quo vel error adipisci animi. Corporis quia praesentium minus eligendi voluptates doloribus fugiat, dignissimos tempore reprehenderit veritatis eveniet repellat quae aliquam at vero porro dolorum odio voluptatum repellendus labore impedit? A, hic tempora illum itaque minima enim blanditiis quis asperiores. Nostrum dolorem eum perspiciatis molestiae nisi quos tempora excepturi aperiam obcaecati labore. Perspiciatis!</p>
+            </section>
+            <section id="seccion-3">
+                <h1>Fresas</h1>
+                <img src="imagenes/fruta3.jpg" alt="Fruta 3" class="img-fluid">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod consequatur quo reiciendis assumenda enim at sequi eaque, consequuntur voluptatibus laudantium perferendis necessitatibus, ratione, tenetur eum iste commodi neque optio possimus aliquam pariatur dolor itaque sapiente repellendus vero. Consequatur ducimus iste nam, odit ab quidem voluptatibus inventore maiores reiciendis a dicta dolore soluta omnis quas est nisi vero possimus rerum voluptatem dolor laboriosam animi? Laborum odio ducimus eum a aliquid dolorum neque sapiente laboriosam? Magni quisquam cum nobis accusantium impedit doloribus illo dicta quia. Tempore, unde fuga. Harum explicabo dolore nemo quis fuga. Assumenda voluptas quasi odio numquam consequatur suscipit iure deleniti veniam dicta vero. Expedita eligendi quia nostrum vitae laudantium ab, repellat magnam minus et consectetur? Quibusdam provident exercitationem eum doloribus laudantium tempore perferendis dolorum, quod inventore iste! Reiciendis dignissimos debitis dolores numquam, dolore corrupti quia molestias sed. Adipisci accusantium similique provident earum dolor veniam saepe minima non tempore nam quasi reprehenderit, rem quaerat quas, sunt est. Recusandae dignissimos aut ipsum vero! Deleniti voluptatibus maiores veritatis sequi quae ea enim repellendus illum ullam animi ut excepturi aliquam quod fugit architecto ex ducimus, omnis odio sit adipisci qui maxime neque distinctio. Cumque a eos culpa itaque harum modi blanditiis numquam assumenda!</p>
+            </section>
+            <disectionv id="seccion-4">
+                <h1>Cerezas</h1>
+                <img src="imagenes/fruta4.jpg" alt="Fruta 4" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat est adipisci eos corrupti, eveniet labore vero tempore! Optio in est nobis, maiores suscipit ut non, aut commodi asperiores similique cumque neque fugiat dolores possimus eius voluptates nostrum vel deserunt hic nam? Voluptatem enim blanditiis est dolor nostrum aut, repellendus excepturi necessitatibus numquam sit eum et quae quaerat nisi voluptatum asperiores ut? Voluptates cum beatae adipisci nulla aspernatur quasi odit sed maxime esse assumenda error, iusto vitae non asperiores eaque neque, blanditiis ab delectus nemo suscipit quas voluptate voluptatum. Reprehenderit ea, adipisci reiciendis laudantium repellat optio ratione fugit vero nobis sit voluptas eos, odit perspiciatis alias dicta at soluta omnis assumenda totam. Odio voluptates fugit, alias qui quaerat tenetur ad illum aspernatur sapiente eveniet obcaecati cumque et numquam neque eos nihil, accusantium possimus ipsum fuga reprehenderit aperiam. Necessitatibus incidunt quasi quam cupiditate exercitationem ut voluptatem aperiam debitis dolor autem tempore repudiandae non, harum facere blanditiis modi aut asperiores laborum ducimus optio fugiat est rem quos! Maxime, quidem? Blanditiis dolore, quam illum est animi minima molestiae voluptatibus esse asperiores dolor recusandae ipsum dicta eius eum. Tempore adipisci nobis sunt minus, eum eaque cupiditate maxime, amet consequatur quo animi unde, libero iusto. Earum!</p>
+            </section>
+        </div>
+        <!--Fin de contenido accesible desde menú scrollspy-->
+
+
+ <!--Formulario-->
+ <section class="container-fluid py-5 bg-success text-white">
+    <h3 class="text-uppercase text-center">Formulario de contacto</h3>
+    <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis inventore nam accusamus reprehenderit dicta? Sed eligendi nisi quidem tempora! Assumenda, vel? A fugit sunt, modi beatae minus amet ullam.</p>
+    <form action=""> 
+      <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+          <div class="row mr-1 ml-1">
+            <label for="" class="col-form-label d-none d-md-block">Nombre:</label>
+            <input type="text" class="form-control" placeholder="Introduce tu nombre">
+          </div>
+        </div>
+        <div class="form-group col-12 col-md-6">
+          <div class="row mr-1 ml-1">
+            <label for="" class="col-form-label d-none d-md-block">Apellidos:</label>
+            <input type="text" class="form-control" placeholder="Introduce tu apellidos">
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+          <div class="row mr-1 ml-1">
+            <label for="" class="col-form-label d-none d-md-block">Email:</label>
+            <input type="email" class="form-control" placeholder="Introduce tu email">
+          </div>
+        </div>
+        <div class="form-group col-12 col-md-6">
+          <div class="row mr-1 ml-1">
+            <label for="" class="col-form-label d-none d-md-block">Contraseña:</label>
+            <input type="password" class="form-control" placeholder="Introduce tu contraseña">
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-12">
+          <div class="row mr-1 ml-1">
+            <label for="" class="col-form-label d-none d-md-block">Escribe tu mensaje:</label>
+            <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <button class="btn btn-primary ml-2" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </section>
+  <!--Fin de formulario-->
+</main>
+
+  <!--Footer-->
+  <footer class="container-fluid bg-dark">
+    <div class="row text-white py-4">
+        <div class="col-md-3">
+            <img src="imagenes/bootstrap-solid.svg" alt="Bootstrap" width="50px" height="auto" class="float-left mr-3">
+            <h4 class="lead">Bootstrap 4!</h4>
+            <div class="blockquote-footer">I.E.S. <cite title="Título">Doñana</cite></div>
+        </div>
+        <div class="col-md-3">
+            <h4 class="lead">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, officia?</p>
+        </div>
+        <div class="col-md-3">
+            <h4 class="lead">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, aspernatur.</p>
+        </div>
+        <div class="col-md-3">
+            <h4 class="lead">Síguenos</h4>
+            <a href="#"><span class="badge badge-primary">Facebook</span></a>
+            <a href="#"><span class="badge badge-danger">Youtube</span></a>
+        </div>
+    </div>
+  </footer>
+  <!--Footer-->
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
